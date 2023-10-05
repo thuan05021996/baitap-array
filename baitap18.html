@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1=prompt("chuỗi 1")
+        let b=n1.split("")
+        let n2=prompt("chuỗi 2")
+        let a=n2.split("")
+        let isTrue = false;
+        if(b.length==a.length){
+            for(let i = 0;i <b.length;i++){
+                if(b[i] !== a[i]) {
+                    isTrue = false;
+                }
+                else {
+                    isTrue = true;
+                }
+
+            }
+        
+        }       
+        else{
+            isTrue = false;
+        }
+
+        if(isTrue) {
+            console.log("Giống");
+        }
+        else {
+            console.log("K Giống");
+        }
+    </script>
+</body>
+</html>

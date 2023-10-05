@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soNguyen=[];
+        for(let i = 0;i <10; i++){
+            let a=+prompt("nhập số nguyên vào đây")
+            soNguyen.push(a)
+        }
+        console.log(soNguyen);
+        let max=soNguyen[0];
+        let index=0;
+        for(let i = 0; i<soNguyen.length ; i++){
+            if(max<soNguyen[i]){
+                max=soNguyen[i]
+                index=i
+            }
+
+        }console.log(`max là sô${max} ở vị trí ${index}`);
+        
+    </script>
+</body>
+</html>

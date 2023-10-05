@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let n =prompt("nhập chuỗi");
+        let arr = n.split(",");
+        console.log(n);
+        let a=[]
+        for(let i = 0;i < arr.length; i++){
+            if(arr[i]<0){
+                a.push(arr[i])
+            }
+        }
+        console.log("đây là các số âm",a);
+    </script>
+</body>
+</html>

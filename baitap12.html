@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let a = +prompt("Nhập số");
+        let arr= [];
+        for(let i = 0; i < 4; i++) {
+            let b = +prompt("Nhập vào");
+            arr.push(b);
+        }
+
+        if(arr.indexOf(a) !== -1) {
+            console.log("phần tử này trong mảng");
+            arr.splice(arr.indexOf(a),1)
+            arr.push(0)
+        } else {
+            console.log("không có trong mảng");
+        } 
+        console.log(arr);
+    </script>
+</body>
+</html>
